@@ -17,7 +17,7 @@ var defaultConfig = Config{
 	Dh:                  "dh2048.pem",
 	Keepalive:           "10 120",
 	IfconfigPoolPersist: "ipp.txt",
-	ExtraConfigOptions:  "",
+	ExtraServerOptions:  "",
 }
 
 //Config model
@@ -41,7 +41,7 @@ type Config struct {
 	Keepalive           string
 	MaxClients          int
 
-	ExtraConfigOptions string
+	ExtraServerOptions string
 
 	Management string
 }
