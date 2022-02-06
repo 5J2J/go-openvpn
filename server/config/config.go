@@ -18,6 +18,7 @@ var defaultConfig = Config{
 	Keepalive:           "10 120",
 	IfconfigPoolPersist: "ipp.txt",
 	ExtraServerOptions:  "",
+	ExtraClientOptions:  "",
 }
 
 //Config model
@@ -42,6 +43,7 @@ type Config struct {
 	MaxClients          int
 
 	ExtraServerOptions string
+	ExtraClientOptions string
 
 	Management string
 }
