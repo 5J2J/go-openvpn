@@ -50,7 +50,7 @@ proto {{ .Proto }}
 # On most systems, the VPN will not function
 # unless you partially or fully disable
 # the firewall for the TUN/TAP interface.
-dev tun
+dev {{ .Dev}}
 
 # Windows needs the TAP-Win32 adapter name
 # from the Network Connections panel if you
@@ -139,7 +139,7 @@ ifconfig-pool-persist {{ .IfconfigPoolPersist }}
 # back to the OpenVPN server.
 ;push "route 192.168.10.0 255.255.255.0"
 ;push "route 192.168.20.0 255.255.255.0"
-push "route 10.8.0.0 255.255.255.0"
+push "route 0.0.0.0 255.255.255.255 net_gateway"
 
 # To assign specific IP addresses to specific
 # clients or if a connecting client has a private

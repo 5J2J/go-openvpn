@@ -19,7 +19,7 @@ var defaultConfig = Config{
 	Dh:                  "dh2048.pem",
 	Keepalive:           "10 120",
 	IfconfigPoolPersist: "ipp.txt",
-	ExtraServerOptions:  "# Uncomment or add any lines you'd like to use\n# push \"block-outside-dns\"\n# client-config-dir /etc/openvpn/ccd",
+	ExtraServerOptions:  "# client-config-dir /etc/openvpn/ccd",
 	ExtraClientOptions:  "",
 }
 
