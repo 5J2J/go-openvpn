@@ -28,6 +28,7 @@ type Config struct {
 	Ca   string
 	Cert string
 	Key  string
+	Ta   string
 
 	Cipher             string
 	Keysize            int
