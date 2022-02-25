@@ -34,6 +34,7 @@ type Config struct {
 	Keysize            int
 	Auth               string
 	ExtraClientOptions string
+	PiVPNServer        string
 }
 
 //New returns config object with default values
