@@ -51,6 +51,8 @@ type Config struct {
 	ExtraClientOptions string
 
 	Management string
+
+	PiVPNServer string
 }
 
 //New returns config object with default values
