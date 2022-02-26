@@ -1,11 +1,13 @@
 package config
 
+// html/template changed to text/template
 import (
 	"bytes"
-	"html/template"
 	"io/ioutil"
+	"text/template"
 )
 
+// Don't think these defaults are ever used -- see models/models.go
 var defaultConfig = Config{
 	Dev:                 "tap0",
 	Port:                1194,
@@ -44,8 +46,7 @@ type Config struct {
 	Server              string
 	IfconfigPoolPersist string
 	Keepalive           string
-	//	MaxClients          int
-	CCEncryption string
+	CCEncryption        string
 
 	ExtraServerOptions string
 	ExtraClientOptions string
