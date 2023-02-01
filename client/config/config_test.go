@@ -4,7 +4,7 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/bnhf/go-openvpn/client/config"
+	"github.com/5J2J/go-openvpn/client/config"
 	"github.com/stretchr/testify/assert"
 )
 
