@@ -3,7 +3,7 @@ package mi_test
 import (
 	"testing"
 
-	mi "github.com/bnhf/go-openvpn/server/mi"
+	mi "github.com/5J2J/go-openvpn/server/mi"
 	"github.com/stretchr/testify/assert"
 )
 
